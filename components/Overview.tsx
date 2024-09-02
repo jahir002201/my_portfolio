@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from 'react';
 
 const Overview: React.FC = () => {
   const [inView, setInView] = useState(false);
-  const ref = useRef<HTMLSectionElement>(null);
+  const ref = useRef<HTMLOptionElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,7 +32,7 @@ const Overview: React.FC = () => {
       <div className="text-center py-8">
         <h2 className="text-4xl font-bold mb-4">Overview</h2>
         <p className="mb-8 max-w-2xl mx-auto text-lg text-gray-700 leading-relaxed">
-          As a passionate Full-Stack Developer with a diverse skill set in JavaScript, TypeScript, Node.js, Python, PHP, and C/C++, I specialize in creating scalable web applications. With a strong foundation in Data Structures & Algorithms, I thrive in solving complex problems and optimizing code for performance. Currently, I'm focused on mastering React and Next.js while expanding my knowledge in modern software development practices and cybersecurity. I&apos;m always eager to learn new technologies and collaborate on innovative projects.
+          As a passionate Full-Stack Developer with a diverse skill set in JavaScript, TypeScript, Node.js, Python, PHP, and C/C++, I specialize in creating scalable web applications. With a strong foundation in Data Structures & Algorithms, I thrive in solving complex problems and optimizing code for performance. Currently, I&apos;m focused on mastering React and Next.js while expanding my knowledge in modern software development practices and cybersecurity. I&apos;m always eager to learn new technologies and collaborate on innovative projects.
         </p>
       </div>
       <div className="flex flex-wrap justify-center gap-8">

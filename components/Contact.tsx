@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from 'react';
 
 const Contact: React.FC = () => {
   const [inView, setInView] = useState(false);
-  const ref = useRef<HTMLSectionElement>(null);
+  const ref = useRef<HTMLOptionElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -13,13 +13,14 @@ const Contact: React.FC = () => {
       { threshold: 0.2 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
