@@ -1,5 +1,3 @@
-import { IconCloudDemo } from "./IconCloudDemo";
-
 const Hero = () => {
 return(
 <section id="home" className="relative bg-[url('/images/bg.png')] bg-cover bg-center h-screen flex items-center justify-center text-white">
@@ -25,7 +23,6 @@ return(
     {/* Right Side Coding Animation */}
     <div className="hidden md:block max-w-lg mx-4 mt-8 md:mt-0 z-10">
       <div className="flex flex-col items-center justify-center h-full">
-        <IconCloudDemo/>
       </div>
     </div>
   </div>
