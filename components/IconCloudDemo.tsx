@@ -111,7 +111,7 @@ export default function IconCloud({ iconSlugs }: IconCloudProps) {
   }, [iconSlugs]);
 
   const renderedIcons = useMemo(() => {
-    if (!data) return null;
+    if (!data) return [];
 
     return Object.values(data.simpleIcons).map((icon) =>
       renderCustomIcon(icon, theme || "light")
@@ -120,7 +120,7 @@ export default function IconCloud({ iconSlugs }: IconCloudProps) {
 
   return (
     <Cloud {...cloudProps}>
-      <>{renderedIcons}</>
+      {renderedIcons.length > 0 ? renderedIcons : null}
     </Cloud>
   );
 }
