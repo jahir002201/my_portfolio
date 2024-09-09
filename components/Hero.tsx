@@ -1,8 +1,11 @@
+"use client";
+import Fireworks from "./Fireworks";
+
 const Hero = () => {
 return(
 <section id="home" className="relative bg-[url('/images/bg.png')] bg-cover bg-center h-screen flex items-center justify-center text-white">
   {/* Background Overlay */}
-  <div className="absolute inset-0 bg-black opacity-20"></div>
+  <div className="absolute inset-0 bg-black opacity-20"><Fireworks/></div>
 
   <div className="relative flex flex-col md:flex-row items-center justify-center md:justify-between px-4 md:px-8">
     {/* Left Side Content */}
