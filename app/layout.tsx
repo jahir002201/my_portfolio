@@ -62,7 +62,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="viewport" content={metadata.viewport} />
         <meta name="robots" content={metadata.robots} />
         <link rel="canonical" href={metadata.openGraph.url} />
-        <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/images/jahir.jpg" />
         <link rel="icon" type="image/png" sizes="32x32" href="/images/jahir.jpg" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/jahir.jpg" />
