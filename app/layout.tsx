@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jahirul Islam - Full Stack Developer Portfolio",
     description: "Explore the portfolio of Jahirul Islam, a Full Stack Developer specializing in JavaScript, React, Node.js. Discover my projects, skills, and expertise in web development.",
-    images: [{ url: "/images/jahir.jpg" }],
+    images: [{ url: "/images/Jahir.jpg" }],
     url: "https://my-portfolio-smoky-xi-63.vercel.app",
     type: "website",
   },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jahirul Islam - Full Stack Developer Portfolio",
     description: "Explore the portfolio of Jahirul Islam, a Full Stack Developer specializing in JavaScript, React, Node.js. Discover my projects, skills, and expertise in web development.",
-    images: [{ url: "/images/jahir.jpg" }],
+    images: [{ url: "/images/Jahir.jpg" }],
   },
 };
 
@@ -62,10 +62,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="viewport" content={metadata.viewport} />
         <meta name="robots" content={metadata.robots} />
         <link rel="canonical" href={metadata.openGraph.url} />
-        <link rel="apple-touch-icon" href="/images/jahir.jpg" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/jahir.jpg" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/jahir.jpg" />
-        <link rel="icon" href="/images/jahir.jpg" />
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta property="og:title" content={metadata.openGraph.title} />
