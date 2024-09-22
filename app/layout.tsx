@@ -57,7 +57,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
 
       <head>
-        <title>{metadata.title}</title>
         <meta name="author" content={metadata.authors[0].name} />
         <meta name="viewport" content={metadata.viewport} />
         <meta name="robots" content={metadata.robots} />
