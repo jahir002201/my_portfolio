@@ -75,7 +75,7 @@ const About: React.FC = () => {
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h3 className="text-2xl font-bold">100+</h3>
+            <h3 className="text-2xl font-bold">500+</h3>
             <p className="text-gray-600">DSA Problems</p>
           </div>
 
