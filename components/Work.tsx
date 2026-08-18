@@ -111,6 +111,7 @@ const Work: React.FC = () => {
                 {/* Link */}
                 <a
                   href={project.link}
+                  target="_blank"
                   className="inline-block mt-4 text-blue-600 font-medium hover:underline"
                 >
                   View Project →
