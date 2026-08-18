@@ -32,6 +32,20 @@ const Work: React.FC = () => {
       stack: ["Django", "React", "PostgreSQL", "JWT"],
     },
     {
+      title: "Library Management API",
+      desc: "RESTful library management API with book, author, member, and borrowing management, JWT authentication, role-based permissions, and Swagger documentation.",
+      image: "/images/drf.png",
+      link: "https://library-management-sigma-gules.vercel.app/swagger/",
+      stack: [
+        "Python",
+        "Django",
+        "DRF",
+        "Djoser",
+        "Simple JWT",
+        "Swagger",
+      ],
+    },
+    {
       title: "Event Management System",
       desc: "Role-based event system with scheduling, RSVP, and automation workflows.",
       image: "/images/django_mvt.png",
@@ -39,11 +53,41 @@ const Work: React.FC = () => {
       stack: ["Django", "Tailwind", "PostgreSQL"],
     },
     {
+      title: "PhiMart E-commerce Platform",
+      desc: "Full-stack e-commerce platform with JWT authentication, product management, cart, orders, reviews, image uploads, and an admin dashboard.",
+      image: "/images/reactDjango.jpg",
+      link: "https://phimart-client-tau.vercel.app/",
+      stack: [
+        "React",
+        "Vite",
+        "TailwindCSS",
+        "DaisyUI",
+        "Django",
+        "DRF",
+        "PostgreSQL",
+        "JWT",
+      ],
+    },
+    {
       title: "Blood Pressure API",
       desc: "RESTful Laravel API for health tracking system with authentication and CRUD operations.",
       image: "/images/laravel.jpg",
       link: "https://github.com/jahir002201/bloodpressure",
       stack: ["Laravel", "PHP", "MySQL", "REST API"],
+    },
+    {
+      title: "Cyber Expert",
+      desc: "Interactive React web application with a responsive Tailwind CSS interface, reusable components, dynamic state management, and API-based data fetching.",
+      image: "/images/react_API.png",
+      link: "https://cyber-expert-xi.vercel.app/",
+      stack: [
+        "React",
+        "Tailwind CSS",
+        "Lucide React",
+        "useState",
+        "useEffect",
+        "Fetch API",
+      ],
     },
   ];
 
