@@ -48,7 +48,7 @@ const Hero = () => {
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           
           <a
-            href="/resume.pdf"
+            href="/Resume_Django.pdf"
             className="bg-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition hover:scale-105"
           >
             Download CV
