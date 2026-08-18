@@ -42,7 +42,7 @@ const Work: React.FC = () => {
       title: "Blood Pressure API",
       desc: "RESTful Laravel API for health tracking system with authentication and CRUD operations.",
       image: "/images/laravel.jpg",
-      link: "#",
+      link: "https://github.com/jahir002201/bloodpressure",
       stack: ["Laravel", "PHP", "MySQL", "REST API"],
     },
   ];
