@@ -25,25 +25,25 @@ const Work: React.FC = () => {
 
   const projects = [
     {
-      title: "Blood Pressure API",
-      desc: "RESTful Laravel API for health tracking system with authentication and CRUD operations.",
-      image: "/images/laravel.jpg",
-      link: "#",
-      stack: ["Laravel", "PHP", "MySQL", "REST API"],
-    },
-    {
       title: "YumFood Platform",
       desc: "Full-stack food ordering system with JWT auth, cart, orders, and admin dashboard.",
       image: "/images/django+react.png",
-      link: "#",
+      link: "https://yumfood-client.vercel.app/",
       stack: ["Django", "React", "PostgreSQL", "JWT"],
     },
     {
       title: "Event Management System",
       desc: "Role-based event system with scheduling, RSVP, and automation workflows.",
       image: "/images/django_mvt.png",
-      link: "#",
+      link: "https://event-management-b7om.onrender.com",
       stack: ["Django", "Tailwind", "PostgreSQL"],
+    },
+    {
+      title: "Blood Pressure API",
+      desc: "RESTful Laravel API for health tracking system with authentication and CRUD operations.",
+      image: "/images/laravel.jpg",
+      link: "#",
+      stack: ["Laravel", "PHP", "MySQL", "REST API"],
     },
   ];
 
