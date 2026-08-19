@@ -74,6 +74,13 @@ const Education: React.FC = () => {
         "Bootstrap",
         "Tailwind CSS",
       ],
+      activities: [
+        "Communication",
+        "Professional Networking",
+        "Team Collaboration",
+        "Technical Workshops",
+        "Project Management",
+      ],
     },
     {
       title: "Bachelor of Science (BSc) — Mathematics (Honours)",
@@ -93,6 +100,12 @@ const Education: React.FC = () => {
         "Differential Equations",
         "Fortran",
         "Mathematica",
+      ],
+      activities: [
+        "Science Club",
+        "Mathematics Activities",
+        "Academic Discussions",
+        "Problem-Solving Sessions",
       ],
     },
   ];
