@@ -84,8 +84,11 @@ const Education: React.FC = () => {
         "Completed a Bachelor of Science in Mathematics (Honours), developing strong analytical thinking, mathematical reasoning, problem-solving, and applied mathematics skills.",
       areas: [
         "Mathematics",
-        "Applied Mathematics",
+        "Linear Algebra",
+        "Calculus",
+        "Analysis",
         "Statistics",
+        "Applied Mathematics",
         "Mathematical Modeling",
         "Differential Equations",
         "Fortran",
