@@ -31,7 +31,7 @@ const Header = () => {
         <nav className="hidden md:flex gap-8 font-medium">
           <a href="#home" className="hover:text-black transition">Home</a>
           <a href="#about" className="hover:text-black transition">About</a>
-          <a heref="#education" className="hover:text-black transition">Education</a>
+          <a href="#education" className="hover:text-black transition">Education</a>
           <a href="#work" className="hover:text-black transition">Work</a>
           <a href="#contact" className="hover:text-black transition">Contact</a>
         </nav>
@@ -55,6 +55,7 @@ const Header = () => {
         <div className="flex flex-col items-center gap-4 font-medium">
           <a href="#home" onClick={closeMenu} className="hover:text-black">Home</a>
           <a href="#about" onClick={closeMenu} className="hover:text-black">About</a>
+          <a href="#education" onClick={closeMenu} className="hover:text-black">Education</a>
           <a href="#work" onClick={closeMenu} className="hover:text-black">Work</a>
           <a href="#contact" onClick={closeMenu} className="hover:text-black">Contact</a>
         </div>
