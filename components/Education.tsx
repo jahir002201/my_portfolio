@@ -49,7 +49,7 @@ const Education: React.FC = () => {
     {
       title: "Professional Web Development",
       institution: "Creative IT Institute",
-      duration: "Jan 2023 – Present",
+      duration: "Jun 2022 – Completed",
       description:
         "Professional web development training focused on modern full-stack application development, backend systems, frontend technologies, and practical software development.",
       areas: [
