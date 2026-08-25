@@ -32,6 +32,13 @@ const Work: React.FC = () => {
       stack: ["Django", "React", "PostgreSQL", "JWT"],
     },
     {
+      title: "Blog Management Platform",
+      desc: "Full-stack blog platform with user authentication, profile management, blog CRUD, categories, subcategories, search, and AJAX-powered dynamic content.",
+      image: "/images/blogs.png",
+      link: "https://github.com/jahir002201/blogs",
+      stack: ["Laravel", "PHP", "MySQL", "MVC", "jQuery", "AJAX", "Bootstrap"],
+    },
+    {
       title: "Library Management API",
       desc: "RESTful library management API with book, author, member, and borrowing management, JWT authentication, role-based permissions, and Swagger documentation.",
       image: "/images/drf.png",
