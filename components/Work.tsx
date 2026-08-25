@@ -53,6 +53,22 @@ const Work: React.FC = () => {
       ],
     },
     {
+      title: "Grafto Nursery E-commerce Platform",
+      desc: "RESTful nursery e-commerce platform with JWT authentication, plant and category management, shopping cart, orders, user profiles, and admin dashboard.",
+      image: "/images/laravel_mvc_api.jpg",
+      link: "https://github.com/jahir002201/grafto",
+      stack: [
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "MVC",
+        "TailwindCSS",
+        "REST API",
+        "JWT",
+        "Eloquent ORM",
+      ],
+    },
+    {
       title: "Event Management System",
       desc: "Role-based event system with scheduling, RSVP, and automation workflows.",
       image: "/images/django_mvt.png",
