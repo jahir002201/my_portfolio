@@ -34,7 +34,7 @@ const Work: React.FC = () => {
     {
       title: "Blog Management Platform",
       desc: "Full-stack blog platform with user authentication, profile management, blog CRUD, categories, subcategories, search, and AJAX-powered dynamic content.",
-      image: "/images/blogs.png",
+      image: "/images/blogs.jpg",
       link: "https://github.com/jahir002201/blogs",
       stack: ["Laravel", "PHP", "MySQL", "MVC", "jQuery", "AJAX", "Bootstrap"],
     },
