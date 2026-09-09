@@ -74,6 +74,9 @@ const Education: React.FC = () => {
         "CSS",
         "Bootstrap",
         "Tailwind CSS",
+        "Git & GitHub",
+        "RESTful APIs",
+        "MVC Architecture",
       ],
       activities: [
         "Communication",
