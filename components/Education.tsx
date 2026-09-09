@@ -51,6 +51,7 @@ const Education: React.FC = () => {
         "Django",
         "Django REST Framework",
         "REST APIs",
+        "FastAPI",
         "Machine Learning",
      ],
       activities: ["XPSC", "XPSC Super Zone", "PACA"],
