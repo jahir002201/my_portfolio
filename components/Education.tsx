@@ -49,6 +49,7 @@ const Education: React.FC = () => {
         "PostgreSQL",
         "SQLite",
         "Django",
+        "MVT Architecture",
         "Django REST Framework",
         "REST APIs",
         "FastAPI",
