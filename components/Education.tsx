@@ -24,7 +24,35 @@ const Education: React.FC = () => {
     };
   }, []);
 
-  const education = [
+  const education = [    
+    {
+      title: "Software Development with AI Engineering",
+      institution: "Next Level",
+      duration: "2026 – Present",
+      description:
+        "Currently enrolled in an intensive software development and AI engineering bootcamp focused on modern web development, software engineering fundamentals, databases, deployment, and AI-powered application development.",
+      areas: [
+        "TypeScript",
+        "Next.js",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "LLM Application Development",
+        "Prompt Engineering",
+        "RAG Systems",
+        "LangChain",
+        "LangGraph",
+        "Docker",
+        "Nginx",
+        "CI/CD"
+      ],
+      activities: [
+        "Hands-on Learning",
+        "Software Project Development",
+        "AI Engineering",
+        "Problem Solving"
+      ]
+    }
+    ,
     {
       title: "CSE Fundamentals With Phitron",
       institution: "Phitron",
