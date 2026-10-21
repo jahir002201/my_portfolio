@@ -38,6 +38,7 @@ const Education: React.FC = () => {
         "Drizzle ORM",
         "LLM Application Development",
         "Prompt Engineering",
+        "AI-Powered SaaS Product Development",
         "RAG Systems",
         "LangChain",
         "LangGraph",
