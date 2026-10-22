@@ -1,74 +1,93 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+
+const skills = [
+  "Django",
+  "Laravel",
+  "React.js",
+  "Next.js",
+  "TypeScript",
+  "Python",
+  "PHP",
+  "REST APIs",
+  "PostgreSQL",
+  "MySQL",
+  "Docker",
+  "AWS",
+];
 
 const Overview: React.FC = () => {
+  const ref = useRef<HTMLElement | null>(null);
   const [inView, setInView] = useState(false);
-  const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
+    const section = ref.current;
+    if (!section) return;
+
+    if (
+      !("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      setInView(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
-      ([entry]) => setInView(entry.isIntersecting),
-      { threshold: 0.2 }
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.unobserve(section);
+        }
+      },
+      { threshold: 0.05 }
     );
 
-    const current = ref.current;
-
-    if (current) observer.observe(current);
-
-    return () => {
-      if (current) observer.unobserve(current);
-      observer.disconnect();
-    };
+    observer.observe(section);
+    return () => observer.disconnect();
   }, []);
-
-  const skills = [
-    "Django",
-    "Laravel",
-    "React.js",
-    "Next.js",
-    "Node.js",
-    "Python",
-    "PHP",
-    "REST API",
-    "PostgreSQL",
-    "MongoDB",
-    "Docker",
-    "AWS",
-  ];
 
   return (
     <section
+      id="overview"
       ref={ref}
-      className={`py-20 px-6 bg-white transition-all duration-700 ease-in-out ${
-        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+      className={`scroll-mt-20 overflow-hidden bg-white px-4 py-16 transition-all duration-700 sm:px-6 sm:py-20 lg:px-8 ${
+        inView ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
+      } motion-reduce:translate-y-0 motion-reduce:transition-none motion-reduce:opacity-100`}
     >
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="mx-auto max-w-5xl text-center">
+        <span className="inline-flex rounded-full border border-blue-100 bg-blue-50 px-4 py-1.5 text-sm font-semibold text-blue-700">
+          What I Do
+        </span>
 
-        {/* Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-          Overview
+        <h2 className="mt-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+          Professional <span className="text-blue-600">Overview</span>
         </h2>
 
-        {/* Description */}
-        <p className="text-gray-600 text-lg leading-relaxed mb-10">
-          I am a Full-Stack Developer specializing in building scalable web
-          applications using Django, Laravel, React, and modern backend
-          architectures. I focus on clean code, system design, and performance
-          optimization while continuously improving my problem-solving skills.
+        <p className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-gray-600 sm:text-base sm:leading-8">
+          I’m a Full-Stack Developer focused on building practical web
+          applications with Django, Laravel, React, and modern backend
+          technologies. I enjoy designing REST APIs, working with databases,
+          writing maintainable code, and improving application performance.
+          I’m continuously developing my software engineering and AI
+          application development skills.
         </p>
 
-        {/* Skills Grid */}
-        <div className="flex flex-wrap justify-center gap-3">
-          {skills.map((skill, index) => (
-            <span
-              key={index}
-              className="px-4 py-2 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-blue-600 hover:text-white transition"
-            >
-              {skill}
-            </span>
-          ))}
+        <div className="mt-9">
+          <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-gray-500">
+            Technologies & Tools
+          </h3>
+
+          <ul className="flex flex-wrap justify-center gap-2.5 sm:gap-3">
+            {skills.map((skill) => (
+              <li
+                key={skill}
+                className="rounded-xl border border-gray-200 bg-gray-50 px-3.5 py-2.5 text-sm font-medium text-gray-700 transition hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700 sm:px-4"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
