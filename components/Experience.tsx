@@ -1,4 +1,6 @@
 
+"use client";
+
 import {
   BriefcaseBusiness,
   CalendarDays,
@@ -21,89 +23,92 @@ const technologies = [
   "Git & GitHub",
 ];
 
+const responsibilities = [
+  "Built and maintained production web applications using Laravel, PHP, and SQL.",
+  "Developed responsive frontend interfaces using HTML, CSS, Bootstrap, and JavaScript.",
+  "Implemented interactive features using jQuery and AJAX.",
+  "Designed relational databases and optimized SQL queries.",
+  "Developed backend functionality using Laravel MVC architecture and REST APIs.",
+  "Used Git and GitHub for version control and collaborative development.",
+  "Deployed applications on AWS EC2 using Linux and Nginx.",
+];
+
 export default function Experience() {
   return (
     <section
       id="experience"
-      className="px-6 py-20 md:px-12 lg:px-24"
+      className="bg-white px-6 py-20 md:px-12 lg:px-24"
     >
       <div className="mx-auto max-w-6xl">
-        <div className="mb-12">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-primary">
+        <div className="mb-12 text-center">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">
             Career Journey
           </p>
 
-          <h2 className="text-3xl font-bold tracking-tight md:text-5xl">
+          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">
             Professional Experience
           </h2>
 
-          <p className="mt-4 max-w-2xl leading-7 text-muted-foreground">
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-gray-600">
             My professional journey in full-stack development,
             backend engineering, and production-ready web applications.
           </p>
         </div>
 
-        <div className="relative border-l border-border pl-6 md:pl-10">
-          <article className="relative rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg md:p-8">
-            <span className="absolute -left-[33px] top-8 h-4 w-4 rounded-full border-4 border-background bg-primary md:-left-[49px]" />
+        <div className="relative border-l-2 border-blue-100 pl-6 md:pl-10">
+          <article className="relative rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg md:p-8">
+            <span className="absolute -left-[33px] top-8 h-4 w-4 rounded-full border-4 border-white bg-blue-600 md:-left-[49px]" />
 
             <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
               <div>
-                <span className="mb-3 inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
+                <span className="mb-3 inline-block rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
                   Professional Experience
                 </span>
 
-                <h3 className="text-xl font-bold md:text-2xl">
+                <h3 className="text-xl font-bold text-gray-900 md:text-2xl">
                   Full-Stack Developer
                 </h3>
 
-                <p className="mt-2 flex items-center gap-2 font-medium text-primary">
-                  <BriefcaseBusiness size={17} />
+                <p className="mt-2 flex items-center gap-2 font-medium text-blue-600">
+                  <BriefcaseBusiness size={18} />
                   Synex Digital
                 </p>
               </div>
 
-              <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-                <span className="flex items-center gap-2">
-                  <CalendarDays size={16} />
+              <div className="space-y-2 text-sm text-gray-600">
+                <p className="flex items-center gap-2">
+                  <CalendarDays size={16} className="text-blue-600" />
                   Mar 2023 – Oct 2024
-                </span>
+                </p>
 
-                <span className="flex items-center gap-2">
-                  <MapPin size={16} />
+                <p className="flex items-center gap-2">
+                  <MapPin size={16} className="text-blue-600" />
                   Dhaka, Bangladesh
-                </span>
+                </p>
               </div>
             </div>
 
-            <p className="mt-6 leading-7 text-muted-foreground">
+            <p className="mt-6 leading-7 text-gray-600">
               Worked on full-stack web development, building and
               maintaining production applications using Laravel,
-              PHP, SQL, and modern frontend technologies.
+              PHP, SQL, and modern frontend technologies in a
+              collaborative startup environment.
             </p>
 
-            <div className="mt-6">
-              <h4 className="mb-4 font-semibold">
+            <div className="mt-7">
+              <h4 className="mb-4 text-lg font-semibold text-gray-900">
                 Key Responsibilities
               </h4>
 
               <ul className="space-y-3">
-                {[
-                  "Built and maintained web applications using Laravel, PHP, and SQL.",
-                  "Developed interactive frontend interfaces using HTML, CSS, Bootstrap, and JavaScript.",
-                  "Implemented dynamic features using jQuery and AJAX.",
-                  "Designed and maintained relational databases using SQL and MySQL.",
-                  "Developed backend functionality following MVC architecture and REST API principles.",
-                  "Used Git and GitHub for version control and collaborative development.",
-                  "Deployed applications on AWS EC2 using Linux and Nginx.",
-                ].map((item) => (
+                {responsibilities.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 text-sm leading-6 text-muted-foreground md:text-base"
+                    className="flex items-start gap-3 text-sm leading-6 text-gray-600 md:text-base"
                   >
                     <CheckCircle2
                       size={18}
-                      className="mt-1 shrink-0 text-primary"
+                      className="mt-1 shrink-0 text-blue-600"
                     />
                     <span>{item}</span>
                   </li>
@@ -111,8 +116,8 @@ export default function Experience() {
               </ul>
             </div>
 
-            <div className="mt-7">
-              <h4 className="mb-4 font-semibold">
+            <div className="mt-8">
+              <h4 className="mb-4 text-lg font-semibold text-gray-900">
                 Technologies & Skills
               </h4>
 
@@ -120,7 +125,7 @@ export default function Experience() {
                 {technologies.map((technology) => (
                   <span
                     key={technology}
-                    className="rounded-lg border border-border bg-muted/50 px-3 py-1.5 text-xs font-medium transition-colors hover:border-primary/50 hover:bg-primary/5"
+                    className="rounded-full border border-gray-200 bg-white px-3 py-2 text-sm font-medium text-gray-700 transition hover:border-blue-500 hover:bg-blue-600 hover:text-white"
                   >
                     {technology}
                   </span>
