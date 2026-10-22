@@ -5,7 +5,14 @@ import Image from "next/image";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-
+  const items = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Education", href: "#education" },
+    { name: "Experience", href: "#experience" },
+    { name: "Work", href: "#work" },
+    { name: "Contact", href: "#contact" },
+  ];
   const toggleMenu = () => setOpen((prev) => !prev);
   const closeMenu = () => setOpen(false);
 
@@ -29,11 +36,15 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 font-medium">
-          <a href="#home" className="hover:text-black transition">Home</a>
-          <a href="#about" className="hover:text-black transition">About</a>
-          <a href="#education" className="hover:text-black transition">Education</a>
-          <a href="#work" className="hover:text-black transition">Work</a>
-          <a href="#contact" className="hover:text-black transition">Contact</a>
+          {items.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="hover:text-black transition"
+            >
+              {item.name}
+            </a>
+          ))}
         </nav>
 
         {/* Mobile Button */}
@@ -53,11 +64,16 @@ const Header = () => {
         }`}
       >
         <div className="flex flex-col items-center gap-4 font-medium">
-          <a href="#home" onClick={closeMenu} className="hover:text-black">Home</a>
-          <a href="#about" onClick={closeMenu} className="hover:text-black">About</a>
-          <a href="#education" onClick={closeMenu} className="hover:text-black">Education</a>
-          <a href="#work" onClick={closeMenu} className="hover:text-black">Work</a>
-          <a href="#contact" onClick={closeMenu} className="hover:text-black">Contact</a>
+          {items.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              onClick={closeMenu}
+              className="hover:text-black transition"
+            >
+              {item.name}
+            </a>
+          ))}
         </div>
       </div>
     </header>
